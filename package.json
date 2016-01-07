@@ -1,0 +1,26 @@
+{
+	"name": "vscode-fish-shell",
+	"displayName": "Fish-Shell Syntax Highlighting",
+	"description": "Syntax highlighting for the fish-shell.",
+	"version": "0.0.1",
+	"publisher": "Decors",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "fish",
+			"aliases": ["Shell Script (Fish)", "Fish"],
+			"extensions": [".fish", ".load"],
+			"configuration": "./fish.configuration.json"
+		}],
+		"grammars": [{
+			"language": "fish",
+			"scopeName": "source.fish",
+			"path": "./syntaxes/fish.tmLanguage"
+		}]
+	}
+}
